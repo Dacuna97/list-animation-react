@@ -1,0 +1,107 @@
+@keyframes showAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hideAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes expandHeight {
+  from {
+    height: 30px;
+  }
+  to {
+    height: auto;
+  }
+}
+
+@keyframes shrinkHeight {
+  from {
+    height: auto;
+  }
+  to {
+    height: 30px;
+  }
+}
+
+.list {
+  padding: 50px;
+}
+
+h1 {
+  cursor: pointer;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.item h2 {
+  font-size: 18px;
+  padding: 15px;
+  text-align: center;
+  background-color: aquamarine;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.item h3 {
+  font-size: 12px;
+  padding: 15px;
+  text-align: center;
+  background-color: lightcoral;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.show {
+  opacity: 1;
+  animation-name: showAnimation;
+  animation-duration: 0.5s;
+}
+.hide {
+  animation-name: hideAnimation;
+  animation-duration: 0.5s;
+  opacity: 0;
+}
+
+.sub-item {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.list-items-show {
+  height: auto;
+  animation-name: expandHeight;
+  animation-duration: 0.2s;
+}
+.list-items-hide {
+  height: 30px;
+
+  animation-name: shrinkHeight;
+  animation-duration: 1s;
+}
